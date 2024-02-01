@@ -24,6 +24,7 @@
   background-size: cover;
   background-attachment: fixed;
   padding-block-start: 102px;
+  font-variation-settings: "wght" var(--text-font);
 }
 
 .header {
@@ -45,6 +46,7 @@
   font-family: "Press Start 2P";
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
+  font-variation-settings: "wght" var(--title-font);
 }
 
 h1 {
@@ -127,7 +129,7 @@ h1 {
   transform-origin: left;
 }
 
-.theme-menu__button:focus-visible {
+.theme-menu__button:focus {
   outline: none;
 }
 

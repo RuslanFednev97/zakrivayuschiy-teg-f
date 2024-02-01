@@ -10,8 +10,13 @@
     --bk-color: #fff;
     --text-weight: 400;
     --heading-weight: 700;
-    --page-gradient: repeating-linear-gradient( to left, #d3d3d3 0 2px, #d3d3d300 2px 4px ), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --page-gradient: 
+    repeating-linear-gradient( to left, #d3d3d3 0 2px, #d3d3d300 2px 4px ), 
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px), 
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --button-text: #fff;
+    --text-font: 400;
+    --title-font: 700;
 }
 
 :root.theme-dark {
@@ -19,8 +24,13 @@
     --bk-color: #000000;
     --text-weight: 465;
     --heading-weight: 785;
-    --page-gradient: repeating-linear-gradient( to left, #000000 0 2px, #00000000 2px 4px ), repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px), linear-gradient(to bottom, #007f0c 0.01%, #004306); 
+    --page-gradient: 
+    repeating-linear-gradient( to left, #000000 0 2px, #00000000 2px 4px ), 
+    repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px), 
+    linear-gradient(to bottom, #007f0c 0.01%, #004306); 
     --button-text: #00cc14;
+    --text-font: 465;
+    --title-font: 785;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,8 +39,13 @@
         --bk-color: #000000;
         --text-weight: 465;
         --heading-weight: 785;
-        --page-gradient: repeating-linear-gradient( to left, #000000 0 2px, #00000000 2px 4px ), repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px), linear-gradient(to bottom, #007f0c 0.01%, #004306); 
+        --page-gradient: 
+        repeating-linear-gradient( to left, #000000 0 2px, #00000000 2px 4px ), 
+        repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px), 
+        linear-gradient(to bottom, #007f0c 0.01%, #004306); 
         --button-text: #00cc14;
+        --text-font: 465;
+        --title-font: 785;
     }
 }
 
@@ -40,7 +55,12 @@
         --bk-color: #fff;
         --text-weight: 400;
         --heading-weight: 700;
-        --page-gradient: repeating-linear-gradient( to left, #d3d3d3 0 2px, #d3d3d300 2px 4px ), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+        --page-gradient: 
+        repeating-linear-gradient( to left, #d3d3d3 0 2px, #d3d3d300 2px 4px ), 
+        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px), 
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
         --button-text: #fff;
+        --text-font: 400;
+        --title-font: 700;
     }
 }
