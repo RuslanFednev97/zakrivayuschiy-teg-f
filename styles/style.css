@@ -20,7 +20,7 @@
   font-family: var(--main-font), "Inter";
   background-color: var(--bk-color);
   color: var(--text-color);
-  background-image: var(--page-gradient);
+  background-image: var(--page-gradient), var(--page-linear-gradient);
   background-size: cover;
   background-attachment: fixed;
   padding-block-start: 102px;
