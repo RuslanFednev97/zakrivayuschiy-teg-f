@@ -7,12 +7,10 @@
     --text-color: #000;
     --bk-color: #fff;
     --page-gradient: 
-        repeating-linear-gradient(to left, #000000 0 2px, #00000000 2px 4px), 
-        repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px);
+        repeating-linear-gradient(to left, #d3d3d3 0 2px, #d3d3d300 2px 4px), 
+        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px);
     --page-linear-gradient: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --button-text: #000;
     --sparks: #FF0000;
-    --text-font: 400;
-    --title-font: 700;
 }
 

@@ -13,11 +13,13 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-.like-icon .heart {
+.like-icon {
     transform-origin: center;
+    cursor: pointer;
+      
 }
   
-.like-icon.is-liked .heart {
+.like-icon.is-liked {
     animation: heart 0.3s ease-in 0.1s 1 alternate;
 }
 

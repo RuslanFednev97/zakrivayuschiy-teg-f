@@ -17,14 +17,14 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), "Inter";
+  font-family: var(--main-font), sans-serif;
   background-color: var(--bk-color);
   color: var(--text-color);
   background-image: var(--page-gradient), var(--page-linear-gradient);
   background-size: cover;
   background-attachment: fixed;
   padding-block-start: 102px;
-  font-variation-settings: "wght" var(--text-font);
+  font-variation-settings: "wght" var(--text-weight);
 }
 
 .header {
@@ -33,42 +33,42 @@
   justify-items: center;
   line-height: normal;
   text-transform: uppercase;
-  max-inline-size: 696px;
+  max-inline-size: 700px;
   margin-inline: auto;
   margin-block-end: 100px;
   background-color: var(--bk-color);
   border: 2px solid var(--text-color);
 }
 
-.teg_html {
-  padding: 134px 0 20px;
+.logo {
+  padding: 136px 0 20px;
   color: var(--text-color, #000);
-  font-family: "Press Start 2P";
+  font-family: var(--accent-font), monospace;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
-  font-variation-settings: "wght" var(--title-font);
+  font-variation-settings: "wght" var(--heading-weight);
 }
 
 h1 {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   color: var(--text-color, #000);
-  font-family: "Press Start 2P";
+  font-family: var(--accent-font), monospace;
   font-style: normal;
   font-weight: 400;
-  padding-block-end: 23px;
+  padding-block-end: 26px;
 }
 
 .theme-menu__list {
   position: relative;
   display: grid;
-  gap: 12px;
-  padding-block-end: 25px;
-  left: 11px;
+  gap: 14px;
+  padding-block-end: 24px;
+  left: 9px;
 }
 
 .theme-menu__item {
   color: var(--text-color, #000);
-  font-family: "Press Start 2P";
+  font-family: var(--accent-font), monospace;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -80,7 +80,10 @@ h1 {
   background-color: transparent;
   text-transform: uppercase;
   position: relative;
-
+  transition: 0.3s;
+  transition-timing-function: ease;
+  cursor: pointer;
+  padding: 0;
 }
 
 .theme-menu__button:disabled::before {
@@ -104,24 +107,20 @@ h1 {
 .theme-menu__button:disabled {
   pointer-events: none;
   opacity: 0.6;
-  transition: 0.3s;
-  transition-timing-function: ease;
 }
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: 0.3s;
-  transition-timing-function: ease;
-  cursor: pointer;
 }
 
 .theme-menu__button::after {
   position: absolute;
   content: "";
-  bottom: 0px;
-  left: 0px;
+  display: block;
+  bottom: -2px;
+  left: 0;
   background-color: var(--text-color);
-  transform: scaleX(0);
+  transform: scaleX(1);
   transition: 0.3s;
   transition-timing-function: ease;
   height: 2px;
@@ -142,7 +141,7 @@ h1 {
 }
 
 .main {
-  max-inline-size: 696px;
+  max-inline-size: 700px;
   margin: auto;
 }
 
@@ -156,22 +155,16 @@ h1 {
   background-color: var(--bk-color);
 }
 
-.header_card {
+.header_card-title {
+  line-height: normal;
   color: var(--text-color, #000);
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: var(--heading-weight);
   line-height: normal;
   padding:5px 12px;
   border-block-end: 2px solid var(--text-color);
-}
-
-.header_card-title {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 .img_card {
@@ -209,9 +202,12 @@ h1 {
 .lable {
   position: absolute;
   color: var(--text-color, #000);
-  -webkit-text-stroke-width: 1;
-  -webkit-text-stroke-color: var(--bk-color, #FFF);
-  font-family: var(--accent-font);
+  text-shadow:
+    -1px 0 var(--bk-color), 
+     0 1px var(--bk-color), 
+     1px 0 var(--bk-color), 
+     0 -1px var(--bk-color);
+  font-family: var(--accent-font), monospace;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -230,11 +226,13 @@ h1 {
   width: 100%;
   aspect-ratio: 1/1;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .text_card {
   color: var(--text-color, #000);
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -246,13 +244,13 @@ h1 {
 }
 
 .button_like {
-  height: 38px;
   display: flex;
   justify-content: end;
   gap: 4px;
+  min-height: 38px;
   margin-block-start: 25px;
   margin-inline-end: 25px;
-  margin-block-end: 25px;
+  margin-block-end: 19px;
 }
 
 .card__icon-button {
@@ -270,15 +268,12 @@ h1 {
   border-color: var(--text-color);
 }
 
-.like-icon {
-  cursor: pointer;
-}
-
 .button {
   border: 2px solid var(--text-color);
   background-color: var(--bk-color);
   position: relative;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .button::before {
@@ -301,7 +296,6 @@ h1 {
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--text-color);
-  transition: 0.3s ease-in-out;
 }
 
 .button:hover::before {
@@ -314,7 +308,7 @@ h1 {
 }
 
 .button__text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), monospace;
   color: var(--button-text);
   font-size: 14px;
   font-style: normal;
@@ -325,7 +319,7 @@ h1 {
   mix-blend-mode: difference;
 }
 
-.footer {
+.save_block {
   display: flex;
   justify-content: center;
   padding-block-start: 54px;
@@ -365,24 +359,30 @@ opacity: 0;
 dialog[open] {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(auto-fit, auto);
   width: 357px;
-  height: 193px;
   align-items: center;
   justify-items: center;
   column-gap: 20px;
-  row-gap: 30px;
-  padding: 31.5px 32.5px 30.5px 31.5px;
+  row-gap: 28px;
+  padding: 31.5px 30.5px 30.5px 30.5px;
   background-color: var(--bk-color);
   border: 2px solid var(--text-color);
 }
 
 .button__dialog {
-  width: 100%;
-  height: 100%;
   grid-column-start: 1;
   grid-column-end: 3;
   align-self: flex-end;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.button_close {
+  width: 100%;
+  height: 100%;
+  padding: 7px 17px;
 }
 
 .floppy__dialog {
@@ -394,6 +394,14 @@ dialog[open] {
   justify-self: center;
   text-transform: uppercase;
   line-height: 150%;
+  font-family: var(--accent-font), monospace;
+  color: var(--button-text);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
 }
 
 .button__text-dialog {
@@ -401,7 +409,7 @@ dialog[open] {
 }
 
 @media (width <= 375px) {
-  .teg_html {
+  .logo {
     padding: 119px 0 20px;
   }
 
@@ -414,10 +422,14 @@ dialog[open] {
     height: 28px;
   }
 
+  .floppy__dialog {
+    width: 39px;
+    height: 39px;
+  }
+
   dialog[open] {
     width: 341px;
-    height: 195px;
-    padding: 32px 42px 32px 42px;
+    padding: 31px 38px;
   }
 
 }
