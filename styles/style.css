@@ -204,6 +204,7 @@ h1 {
   mix-blend-mode: hard-light;
   right: 13px;
   top: 25px;
+  z-index: 2;
 }
 
 .lable_up {
