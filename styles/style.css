@@ -87,9 +87,9 @@ h1 {
 }
 
 .theme-menu__button:disabled::before {
-  content: "▶"; 
-  position: absolute; 
-  inset-inline-start: -19px; 
+  content: "▶";
+  position: absolute;
+  inset-inline-start: -19px;
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
@@ -237,7 +237,7 @@ h1 {
   gap: 6px;
   margin-block-start: 26px;
   margin-inline-end: 25px;
-  margin-block-end: 25px; 
+  margin-block-end: 25px;
 }
 
 .card__icon-button {
