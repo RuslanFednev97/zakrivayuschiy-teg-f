@@ -90,6 +90,7 @@ h1 {
   content: "▶";
   position: absolute;
   inset-inline-start: -19px;
+  inset-block-start: 0;
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
@@ -150,7 +151,7 @@ h1 {
   font-family: var(--main-font), sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: var(--heading-weight);
+  font-variation-settings: "wght" var(--heading-weight);
   padding:5px 12px;
   border-block-end: 2px solid var(--text-color);
 }
